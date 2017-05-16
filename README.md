@@ -1,7 +1,7 @@
 # Scrabbler
 This program gives you all possible words from an entered string, using the text file ```words.txt```
 ## Requirements 
-Java (I used 1.8)
+[Java](https://www.java.com/)
 
 Access to Terminal/Command prompt
 ## Instructions
