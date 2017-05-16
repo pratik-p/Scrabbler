@@ -2,6 +2,7 @@
 This program gives you all possible words from an entered string, using the text file ```words.txt```
 ## Requirements 
 Java (I used 1.8)
+
 Access to Terminal/Command prompt
 ## Instructions
 Open command prompt, change your directory to the location of the ```Scrabler\src\``` folder with command ```cd```
