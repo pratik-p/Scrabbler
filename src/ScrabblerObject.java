@@ -57,7 +57,7 @@ class ScrabblerObject {
     private void makeDictionary() {
         try {
             String filePath = new File("").getAbsolutePath();
-            Scanner fileInput = new Scanner(new FileReader(filePath + "/src/words.txt"));
+            Scanner fileInput = new Scanner(new FileReader(filePath + "/words.txt"));
             while (fileInput.hasNextLine()) {
                 String word = fileInput.nextLine();
                 if (!word.equals("")) {
