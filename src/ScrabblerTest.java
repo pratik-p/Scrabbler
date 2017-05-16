@@ -8,13 +8,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 
-public class ScrabblerObjectTest {
+public class ScrabblerTest {
     @Test
     public void testStart() {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(baos));
         Scanner input = new Scanner("ball");
-        ScrabblerObject test = new ScrabblerObject(input);
+        Scrabbler test = new Scrabbler(input);
         test.start();
 
         String actual = baos.toString();
@@ -34,7 +34,7 @@ public class ScrabblerObjectTest {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(baos));
         Scanner input = new Scanner("--prefix fi");
-        ScrabblerObject test = new ScrabblerObject(input);
+        Scrabbler test = new Scrabbler(input);
         test.start();
 
         String actual = baos.toString();
@@ -104,7 +104,7 @@ public class ScrabblerObjectTest {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(baos));
         Scanner input = new Scanner("--suffix edge");
-        ScrabblerObject test = new ScrabblerObject(input);
+        Scrabbler test = new Scrabbler(input);
         test.start();
 
         String actual = baos.toString();
@@ -127,7 +127,7 @@ public class ScrabblerObjectTest {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(baos));
         Scanner input = new Scanner("/quit");
-        ScrabblerObject test = new ScrabblerObject(input);
+        Scrabbler test = new Scrabbler(input);
         test.start();
 
         String actual = baos.toString();
